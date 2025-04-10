@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* cursor: url(./image/面包.png); */
+    cursor:default;
+}
+body{
+    background-color: rgba(241, 217, 213,0.5);
+}
+
+/* 页头和导航栏 */
+header {
+    background-color: #000000;
+    height: 80px;
+    position: relative;
+    box-shadow: 0 5px 5px gray;
+}
+
+header h1 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    position: absolute;
+    left: 30px;
+    line-height: 80px;
+    transition: 0.5s;
+}
+
+header h1:hover {
+    font-size: 35px;
+    color: rgb(239, 122, 130);
+}
+
+.blonav ul {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    line-height: 80px;
+}
+
+.blonav li {
+    display: inline-block;
+    margin-right: 4vw;
+    transition: 1s;
+}
+
+.blonav li a {
+    font-size: 17px;
+    text-decoration: none;
+    color: rgba(233, 233, 233, 0.8);
+    transition: all 0.2s;
+}
+
+.blonav li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.nonnav{
+    width: 150px;
+    height: 200px;
+    background-color: #000000;
+    position: absolute;
+    top: 80px;
+    z-index: 999;
+    font-size: 17px;
+    text-decoration: none;
+    color: rgba(233, 233, 233, 0.8);
+    transition: all 0.2s;
+    text-align: center;
+    left: 30px;
+    line-height: 47px;
+    display: none;
+}
+.nonnav ul{
+    list-style-type: none;
+}
+.nonnav li a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+/* 欢迎页面 */
+#welcomesec{
+    position: relative;
+    width: 100%;
+    height: 712px;
+}
+#welcome{
+    background-color: rgba(190, 190, 190, 0.7);
+    z-index: -0;
+    width: 100%;
+    /* height: 712px; */
+    height: 100%;
+    position: absolute;
+}
+#welcomebg{
+    width: 100%;
+    /* height: 712px; */
+    height: 100%;
+    z-index: -2;
+    background-image: url(./image/bg2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction:column;
+    position: absolute;
+}
+#welcometxt{
+    width: 100%;
+    /* height: 712px; */
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    z-index: 990;
+    position: absolute;
+}
+#welcometxt div{
+    margin-top: 60px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #ffffff;
+    text-shadow: 5px 4px 1px #484848;
+}
+
+/* 轮播图 */
+.lbt{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+.bg{
+    /* background-image: url(./image/bg.jpeg);
+    background-repeat: no-repeat; */
+    height: 500px;
+    width: 80%;
+    /* background-size: cover; */
+    /* transition: 0.5s; */
+    left: 50%;
+    /* background-position: center; */
+}
+#bg1,#bg2{
+    height: 500px;
+    width: 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    
+}
+#bg1{
+    display: none;
+    background-image: url(./image/bg.jpeg);
+    
+}
+#bg2{
+    display: block;
+    background-image: url(./image/bg2.jpeg);
+}
+/* .bg:hover{
+    background-image: url(./image/bg2.jpeg);
+    background-repeat: no-repeat;
+} */
+
+/* 商品页面 */
+.goodstxt{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(239, 122, 130);
+    text-shadow: 3px 3px 2px rgb(190, 190, 190);
+}
+.goods{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+.goods div{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(239, 122, 130);
+    text-shadow: 3px 3px 2px rgb(190, 190, 190);
+    font-weight: bolder;
+}
+.goods img{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.goods img:hover{
+    border-radius: 50%;
+}
+
+/* 装饰线条 */
+.hr{
+    width: 100%;
+    height: 45px;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.hr div{
+    height: auto;
+    width: 80%;
+    background-repeat: repeat-x;
+}
+
+/* 面包形状线条48*48 */
+#breakhr{
+    background-image: url(./image/面包.png);
+}
+
+/* 蛋糕形状线条48*48 */
+#cakehr{
+    background-image: url(./image/蛋糕.png);
+}
+
+/* 页脚 */
+footer {
+    margin-top: 100px;
+    height: 100px;
+    background-color: #000000;
+    color: aliceblue;
+    text-align: center;
+    /* line-height: 100px; */
+}
+
+footer a {
+    align-items: center;
+    line-height: 100px;
+    color: rgb(133, 133, 133);
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(202, 202, 202);
+    text-decoration: underline;
+}
+
+/* 响应式布局语法 */
+@media screen and (max-width:768px) {
+    header nav{
+        display: none;
+    }
+
+    .goods{
+        flex-direction: column;
+    }
+    .goods div{
+        margin: 10px;
+    }
+
+    .yuangang:hover .nonnav{
+        display: block;
+    }
+
+    header h1{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .nonnav{
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+}
